@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Micaila Fashion | Moda feminina no atacado e varejo em Coari-AM</title>
+<meta name="description" content="Todos os modelos de roupa que você imaginar: vestidos de tricô, macaquinhos, blusas, fitness e aluguel de vestidos. Primeira loja de atacado de Coari, com envio para os municípios. Encomende pelo WhatsApp.">
+<meta name="theme-color" content="#140A10">
+<link rel="canonical" href="https://micailafashion.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Micaila Fashion · Vista o que te faz bem">
+<meta property="og:description" content="Moda feminina no atacado e varejo em Coari-AM. Encomende pelo WhatsApp e receba nos municípios.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23140A10'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' font-style='italic' text-anchor='middle' fill='%23F7A4BA'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="cetim.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ===== Rastreamento (ative colocando os IDs) =====
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','[PREENCHER_PIXEL_ID]');fbq('track','PageView');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=[PREENCHER_GA4_ID]"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','[PREENCHER_GA4_ID]');</script>
+===== -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "Micaila Fashion",
+  "slogan": "Vista o que te faz bem",
+  "description": "Moda feminina no atacado e varejo em Coari-AM. Vestidos, macaquinhos, blusas, fitness e aluguel de vestidos.",
+  "telephone": "+55 92 98192-2212",
+  "url": "https://micailafashion.vercel.app/",
+  "sameAs": ["https://www.instagram.com/micailafashion/"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Estrada do Aeroporto, 956 (ao lado da Construtintas)",
+    "addressLocality": "Coari",
+    "addressRegion": "AM",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:00", "closes": "18:00"
+  }],
+  "paymentAccepted": "Crediário Bemol"
+}
+</script>
+
+<style>
+:root{
+  --bg:#140A10; --bg-2:#1D0E17; --surface:#24121D;
+  --brand:#C0305D; --rose:#F7A4BA; --accent:#D5AE76; --glow:#FF7AA8;
+  --ink:#F7EDEF; --muted:#BFA6B0; --line:rgba(247,237,239,.14);
+  --whatsapp:#25D366;
+  --display:"Bodoni Moda", "Didot", Georgia, serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r:999px; --ease:cubic-bezier(.2,.7,.1,1);
+  --safe-b:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+em,.it{font-family:var(--display);font-style:italic;font-weight:400}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.kicker{font-family:var(--display);font-style:italic;color:var(--rose);font-size:clamp(17px,1.6vw,21px);letter-spacing:.01em}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.h2{font-family:var(--display);font-weight:500;font-size:clamp(38px,6vw,78px);line-height:1.02;letter-spacing:-.01em}
+.h2 em{color:var(--rose)}
+
+/* ---------- grain + vignette ---------- */
+.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:60;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-6%,-2%)}80%{transform:translate(5%,4%)}100%{transform:translate(0,0)}}
+.vignette{position:fixed;inset:0;pointer-events:none;z-index:59;background:radial-gradient(120% 90% at 50% 40%,transparent 55%,rgba(5,2,4,.55) 100%)}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:calc(14px + env(safe-area-inset-top,0px)) clamp(16px,3vw,36px) 14px;transition:background .4s,backdrop-filter .4s}
+.nav.solid{background:rgba(20,10,16,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:var(--display);font-style:italic;font-weight:500;font-size:24px;letter-spacing:.01em}
+.brand small{font-size:9.5px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);margin-top:4px}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.nav .right{display:flex;align-items:center;gap:14px}
+.back-ig{font-size:12px;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(247,237,239,.4);border-radius:var(--r);padding:10px 18px;font-size:14px;font-weight:600;transition:background .3s,color .3s,border-color .3s;min-height:44px}
+.btn-ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media (max-width:860px){.nav ul{display:none}.back-ig{display:none}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:var(--r);
+  background:var(--ink);color:#1a0b13;font-weight:700;font-size:16px;letter-spacing:.01em;transition:transform .3s var(--ease),box-shadow .3s;box-shadow:0 10px 40px -10px rgba(255,122,168,.55)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 50px -12px rgba(255,122,168,.8)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.gold{background:linear-gradient(120deg,#F3D9A8,#D5AE76 45%,#B98D52);color:#2a1509}
+.micro{font-size:13px;color:var(--muted);margin-top:12px}
+.micro b{color:var(--ink);font-weight:600}
+
+/* ============ FILM / HERO ============ */
+.film{position:relative;height:340vh}
+.stage{position:sticky;top:0;height:100svh;overflow:hidden;background:radial-gradient(90% 70% at 50% 30%,#2a0f1f 0%,var(--bg) 70%)}
+.stage-inner{position:absolute;inset:0;will-change:filter,transform,opacity}
+/* spotlights */
+.spots{position:absolute;inset:0;pointer-events:none;opacity:0}
+.beam{position:absolute;top:-10%;width:46vmax;height:120%;transform-origin:50% 0;mix-blend-mode:screen;filter:blur(12px);
+  background:conic-gradient(from 180deg at 50% 0%,transparent 0 166deg,rgba(255,170,200,.62) 180deg,transparent 194deg)}
+.beam.b1{left:2%;transform:rotate(-16deg);animation:sway 7s ease-in-out infinite}
+.beam.b2{left:calc(50% - 23vmax);animation:sway 9s ease-in-out infinite reverse}
+.beam.b3{right:2%;transform:rotate(16deg);animation:sway 8s ease-in-out infinite}
+.beam.b2{background:conic-gradient(from 180deg at 50% 0%,transparent 0 170deg,rgba(243,217,168,.38) 180deg,transparent 190deg)}
+@keyframes sway{0%,100%{rotate:-2deg}50%{rotate:2deg}}
+.floor{position:absolute;left:50%;bottom:-18vh;width:120vw;height:46vh;transform:translateX(-50%);background:radial-gradient(50% 50% at 50% 50%,rgba(255,122,168,.28),transparent 70%);filter:blur(10px);opacity:0}
+
+/* reveal composition */
+.reveal{position:absolute;inset:0;display:grid;place-items:center;padding:88px 16px 40px}
+.split{position:relative;display:flex;align-items:center;justify-content:center;gap:clamp(8px,2vw,28px);width:100%;max-width:1400px}
+.word{font-family:var(--display);font-weight:900;text-transform:uppercase;line-height:.85;font-size:clamp(54px,7.4vw,150px);letter-spacing:-.02em;
+  color:var(--ink);text-shadow:0 0 60px rgba(255,122,168,.35);opacity:0;will-change:transform,opacity}
+.word.l{transform:translateX(-12vw)}.word.r{transform:translateX(12vw)}
+.figure{position:relative;width:clamp(200px,24vw,340px);aspect-ratio:305/364;flex:none;opacity:0;will-change:transform,filter,opacity}
+.figure::before{content:"";position:absolute;inset:-30%;background:radial-gradient(closest-side,rgba(255,122,168,.55),rgba(192,48,93,.18) 55%,transparent 75%);filter:blur(20px);z-index:-1}
+.duo{position:relative;overflow:hidden;border-radius:200px 200px 18px 18px;height:100%;background:#2b1020}
+.duo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15) brightness(1.05)}
+.duo::after{content:"";position:absolute;inset:0;background:linear-gradient(170deg,#F7A4BA 0%,#C0305D 55%,#3a0820 100%);mix-blend-mode:multiply}
+.duo::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(20,10,16,.85),transparent 40%)}
+.hero-meta{position:absolute;left:0;right:0;bottom:clamp(22px,6vh,64px);max-width:100%;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;opacity:0;padding:0 20px}
+.over{position:absolute;top:clamp(96px,16vh,170px);left:0;right:0;text-align:center;opacity:0}
+.over .kicker{font-size:clamp(20px,2.4vw,30px)}
+
+/* curtain */
+.curtain{position:absolute;inset:0;z-index:5;pointer-events:none}
+.panel{position:absolute;top:-4%;bottom:-4%;width:52%;background:url(cetim.webp) center/cover no-repeat;will-change:transform,filter;
+  box-shadow:0 0 80px rgba(0,0,0,.6)}
+.panel.pl{left:0;transform-origin:50% 50%;background-position:20% 50%}
+.panel.pr{right:0;transform-origin:50% 50%;background-position:20% 50%;transform:scaleX(-1)}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,4,12,.25),transparent 30%,transparent 70%,rgba(20,4,12,.45))}
+.intro{position:absolute;inset:0;z-index:6;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 20px calc(40px + var(--safe-b));will-change:opacity,transform}
+.intro .eyebrow{color:#FCE6EC;text-shadow:0 1px 10px rgba(0,0,0,.4)}
+.intro h1{font-family:var(--display);font-weight:500;font-style:italic;font-size:clamp(76px,15vw,220px);line-height:.88;letter-spacing:-.02em;margin:14px 0 4px;color:#fff;
+  text-shadow:0 2px 0 rgba(120,10,50,.25),0 20px 80px rgba(60,0,25,.55)}
+.intro h1 span{display:block;font-style:normal;font-weight:700;font-size:.2em;letter-spacing:.62em;text-transform:uppercase;margin-top:.5em;padding-left:.62em;color:#FCE6EC}
+.intro p.lead{max-width:30ch;font-size:clamp(17px,1.6vw,20px);color:#FFF3F6;text-shadow:0 1px 14px rgba(40,0,15,.6);margin:18px auto 26px}
+.intro .micro{color:#FCE6EC}
+.scroll-hint{position:absolute;bottom:calc(18px + var(--safe-b));left:50%;transform:translateX(-50%);z-index:6;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#FCE6EC;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint i{width:1px;height:34px;background:linear-gradient(#fff,transparent);animation:drip 1.8s var(--ease) infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+@media (max-width:760px){
+  .split{flex-direction:column;gap:6px}
+  .word{font-size:clamp(52px,17vw,96px)}
+  .word.l{transform:translateY(-8vh)} .word.r{transform:translateY(8vh)}
+  .figure{width:min(58vw,250px)}
+  .over{top:86px}
+  .hero-meta{bottom:calc(150px + var(--safe-b))}
+  .hero-meta .eyebrow{font-size:10.5px;letter-spacing:.18em;line-height:1.8}
+  .film{height:300vh}
+}
+
+/* ============ SECTIONS ============ */
+section{position:relative}
+.pad{padding:clamp(88px,14vh,160px) 0}
+[data-r]{opacity:0;transform:translateY(22px);filter:blur(10px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease)}
+[data-r].in{opacity:1;transform:none;filter:none}
+
+/* manifesto */
+.manifesto{padding:clamp(110px,22vh,220px) 0;text-align:center}
+.manifesto p{font-family:var(--display);font-weight:400;font-size:clamp(32px,5.2vw,72px);line-height:1.12;max-width:19ch;margin:0 auto;letter-spacing:-.01em}
+.manifesto .w{opacity:.12;transition:opacity .5s}
+.manifesto .w.on{opacity:1}
+.manifesto em{color:var(--rose)}
+.manifesto .eyebrow{display:block;margin-bottom:28px}
+
+/* collections */
+.cols-grid{display:grid;grid-template-columns:1fr 360px;gap:clamp(30px,5vw,80px);align-items:start;margin-top:56px}
+.list{list-style:none;border-top:1px solid var(--line)}
+.list a{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:18px;padding:26px 6px;border-bottom:1px solid var(--line);transition:background .4s,padding .4s var(--ease)}
+.list .n{font-family:var(--display);font-style:italic;color:var(--accent);font-size:18px}
+.list h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(28px,4vw,52px);line-height:.95;letter-spacing:-.01em;transition:color .35s}
+.list p{color:var(--muted);font-size:15px;margin-top:8px;max-width:46ch}
+.list .go{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:all .35s}
+.list a:hover,.list a:focus-visible{background:linear-gradient(90deg,rgba(192,48,93,.14),transparent);padding-left:16px}
+.list a:hover h3,.list a:focus-visible h3{color:var(--rose)}
+.list a:hover .go{background:var(--rose);border-color:var(--rose);color:var(--bg)}
+.cols-photo{position:sticky;top:110px;display:grid;gap:18px}
+.cols-photo .duo{border-radius:18px;aspect-ratio:3/4}
+.cols-photo .duo.tall{aspect-ratio:196/360}
+.cols-photo figcaption{font-family:var(--display);font-style:italic;color:var(--muted);font-size:15px;margin-top:8px}
+.ph-pair{display:grid;grid-template-columns:1.25fr 1fr;gap:14px;align-items:end}
+@media (max-width:900px){.cols-grid{grid-template-columns:1fr}.cols-photo{position:relative;top:0;order:-1}.list a{grid-template-columns:36px 1fr auto;gap:12px}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line)}
+.step{padding:34px 28px 10px 0;border-right:1px solid var(--line)}
+.step:last-child{border-right:0}
+.step+.step{padding-left:28px}
+.step .num{font-family:var(--display);font-weight:400;font-size:64px;line-height:1;color:transparent;-webkit-text-stroke:1px var(--accent)}
+.step h3{font-family:var(--display);font-size:28px;font-weight:500;margin:18px 0 10px}
+.step h3 em{color:var(--rose)}
+.step p{color:var(--muted);font-size:16px}
+@media (max-width:820px){.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line);padding:28px 0}.step+.step{padding-left:0}}
+
+/* golden */
+.golden{overflow:hidden}
+.gold-card{position:relative;border-radius:28px;overflow:hidden;padding:clamp(40px,7vw,90px);isolation:isolate;
+  background:url(cetim.webp) center/cover;min-height:520px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.gold-card::before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,rgba(28,4,16,.86) 0%,rgba(40,6,22,.55) 55%,rgba(40,6,22,.2));z-index:-1}
+.gold-title{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(44px,10vw,140px);line-height:.85;letter-spacing:-.02em;
+  background:linear-gradient(100deg,#FFF1CF 0%,#E9C98F 30%,#B98D52 55%,#F6E2B5 75%,#C89A5E 100%);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:-200% 0}}
+.gold-card .kicker{font-size:clamp(24px,3vw,38px);color:#FCE6EC}
+.gold-card p{color:#F5DDE4;max-width:40ch;margin:18px 0 28px}
+.gift{justify-self:center;width:330px;max-width:100%;aspect-ratio:1.586;border-radius:18px;padding:22px;position:relative;
+  background:linear-gradient(135deg,#E0457B,#B8285A 60%,#8e1a44);box-shadow:0 30px 60px -20px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.3);transform:rotate(-7deg);color:#FCE6EC}
+.gift .gl{font-family:var(--display);font-style:italic;font-size:22px}
+.gift .gv{position:absolute;right:22px;top:20px;font-family:var(--display);font-weight:800;font-size:28px;color:#F3D9A8}
+.gift .gs{position:absolute;left:22px;bottom:20px;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#F3D9A8}
+.gift .chip{position:absolute;left:22px;top:70px;width:42px;height:32px;border-radius:6px;background:linear-gradient(135deg,#F6E2B5,#B98D52)}
+@media (max-width:860px){.gold-card{grid-template-columns:1fr;min-height:0}.gift{transform:rotate(-4deg)}}
+
+/* perks */
+.perks{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.perk{border:1px solid rgba(243,217,168,.4);color:#F3D9A8;border-radius:var(--r);padding:8px 16px;font-size:13px;font-weight:600;letter-spacing:.02em}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:56px}
+.stat{padding:36px 18px;border-right:1px solid var(--line);text-align:center}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(44px,6vw,80px);line-height:1;color:var(--ink)}
+.stat b sup{font-size:.4em;color:var(--rose);vertical-align:top;margin-left:2px}
+.stat span{display:block;margin-top:10px;color:var(--muted);font-size:14px}
+@media (max-width:760px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+/* testimonials */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.quote{border:1px dashed rgba(247,164,186,.35);border-radius:20px;padding:28px;background:rgba(36,18,29,.5)}
+.quote p{font-family:var(--display);font-style:italic;font-size:20px;line-height:1.35}
+.quote span{display:block;margin-top:16px;font-size:13px;color:var(--muted)}
+.fill{color:var(--accent);font-family:var(--sans);font-style:normal;font-size:12px;letter-spacing:.06em}
+@media (max-width:860px){.quotes{grid-template-columns:1fr}}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px)}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 4px;font-family:var(--display);font-size:clamp(20px,2.2vw,26px);font-weight:500;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary i{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .4s var(--ease),background .3s}
+summary i::before{content:"+";font-style:normal;font-family:var(--sans);font-size:20px;line-height:1}
+details[open] summary i{transform:rotate(45deg);background:var(--brand);border-color:var(--brand)}
+details p{padding:0 4px 24px;color:var(--muted);max-width:60ch}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr}}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.map{border-radius:24px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);background:var(--surface);position:relative}
+.map{display:block}.map svg{position:absolute;inset:0;width:100%;height:100%}.map-tag{position:absolute;left:16px;right:16px;bottom:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;padding:14px 18px;border-radius:16px;background:rgba(20,10,16,.78);backdrop-filter:blur(8px);font-size:14px;color:var(--muted)}.map-tag b{color:var(--rose);font-weight:600}
+.info dl{display:grid;gap:22px;margin:30px 0 34px}
+.info dt{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.info dd{font-family:var(--display);font-size:clamp(22px,2.4vw,28px);line-height:1.25;margin-top:6px}
+.info dd small{display:block;font-family:var(--sans);font-size:15px;color:var(--muted);margin-top:4px}
+.row-btns{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:860px){.visit{grid-template-columns:1fr}}
+
+/* final cta */
+.final{text-align:center;padding:clamp(110px,20vh,200px) 0 clamp(70px,10vh,110px);background:radial-gradient(60% 60% at 50% 40%,rgba(192,48,93,.28),transparent 70%)}
+.final .h2{font-size:clamp(46px,8vw,110px);margin:16px 0 30px}
+
+/* footer */
+footer{padding:40px 0 0;border-top:1px solid var(--line);overflow:hidden}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px;font-size:14px;color:var(--muted)}
+.foot h4{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);margin-bottom:12px;font-weight:600}
+.foot a:hover{color:var(--ink)}
+.foot li{list-style:none;margin:6px 0}
+.giant{font-family:var(--display);font-weight:900;text-transform:uppercase;text-align:center;line-height:.78;letter-spacing:-.03em;
+  font-size:clamp(84px,24vw,380px);margin:56px 0 -0.06em;padding-bottom:calc(70px + var(--safe-b));
+  background:linear-gradient(180deg,var(--ink) 30%,rgba(247,164,186,.35) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:blur(var(--gb,14px));opacity:var(--go,.2);transform:translateY(var(--gy,40px));transition:filter .2s linear}
+.legal{font-size:12px;color:#8d7480;margin-top:28px}
+@media (max-width:760px){.foot{grid-template-columns:1fr}}
+
+/* floating + bar */
+.wa-float{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(18px + var(--safe-b));z-index:55;width:60px;height:60px;border-radius:50%;background:var(--whatsapp);display:grid;place-items:center;
+  box-shadow:0 12px 30px -6px rgba(37,211,102,.55);transition:transform .3s, opacity .3s}
+.wa-float svg{width:30px;height:30px;color:#fff}
+.wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--whatsapp);animation:pulse 6s ease-out infinite}
+@keyframes pulse{0%,80%{transform:scale(1);opacity:0}85%{opacity:.8}100%{transform:scale(1.6);opacity:0}}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:54;padding:10px 14px calc(10px + var(--safe-b));background:rgba(20,10,16,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
+  transform:translateY(110%);transition:transform .5s var(--ease);display:none}
+.bar.show{transform:none}
+.bar .btn{width:100%;min-height:52px;background:var(--whatsapp);color:#05170c;box-shadow:none}
+@media (max-width:760px){.bar{display:block}.wa-float{bottom:calc(84px + var(--safe-b))}body.bar-on .wa-float{opacity:0;pointer-events:none}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  [data-r]{opacity:1;transform:none;filter:none}
+  .manifesto .w{opacity:1}
+  .giant{filter:none;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#topo" aria-label="Micaila Fashion, início"><b>Micaila</b><small>Fashion</small></a>
+  <ul>
+    <li><a href="#colecoes">Coleções</a></li>
+    <li><a href="#comprar">Como comprar</a></li>
+    <li><a href="#duvidas">Dúvidas</a></li>
+    <li><a href="#visite">Visite</a></li>
+  </ul>
+  <div class="right">
+    <a class="back-ig" href="https://www.instagram.com/micailafashion/" target="_blank" rel="noopener">← Voltar ao Instagram</a>
+    <a class="btn-ghost wa" data-cta="nav" data-msg="Olá! Vim pelo Instagram e quero falar com a Micaila Fashion." href="#">Falar agora <span aria-hidden="true">›</span></a>
+  </div>
+</header>
+
+<main id="topo">
+<!-- ================= FILM / HERO ================= -->
+<section class="film" id="filme" aria-label="Apresentação Micaila Fashion">
+  <div class="stage">
+    <div class="stage-inner" id="stageInner">
+      <div class="spots" id="spots" aria-hidden="true"><div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div></div>
+      <div class="floor" id="floor" aria-hidden="true"></div>
+
+      <div class="reveal">
+        <div class="over" id="over"><p class="kicker">Vista o que te faz bem</p></div>
+        <div class="split">
+          <span class="word l" id="wl">Atacado</span>
+          <div class="figure" id="fig">
+            <div class="duo"><img src="manequins.webp" width="305" height="364" alt="Conjuntos fitness rosa em manequins na loja Micaila Fashion"></div>
+          </div>
+          <span class="word r" id="wr">Varejo</span>
+        </div>
+        <div class="hero-meta" id="meta">
+          <p class="eyebrow">Primeira loja de atacado de Coari · enviamos para os municípios</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="curtain" aria-hidden="true">
+      <div class="panel pl" id="pl"></div>
+      <div class="panel pr" id="pr"></div>
+    </div>
+
+    <div class="intro" id="intro">
+      <p class="eyebrow">Moda feminina · Coari-AM</p>
+      <h1>Micaila<span>Fashion</span></h1>
+      <p class="lead">Todos os modelos de roupa que você imaginar, no atacado e no varejo.</p>
+      <a class="btn wa" data-cta="hero" data-msg="Olá! Vim pelo Instagram e quero ver as novidades da Micaila Fashion." href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.6.6-.9 1.4-.9 2.2.1 1 .5 1.9 1.1 2.7 1.1 1.6 2.5 2.9 4.2 3.6.5.2 1 .4 1.4.5.6.2 1.1.1 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg>
+        Ver novidades no Whats
+      </a>
+      <p class="micro">Seg a sáb, 10h às 18h · <b>não fechamos pro almoço</b></p>
+    </div>
+    <div class="scroll-hint" id="hint" aria-hidden="true">Role<i></i></div>
+  </div>
+</section>
+
+<!-- ================= MANIFESTO ================= -->
+<section class="manifesto" aria-label="Manifesto">
+  <div class="wrap">
+    <span class="eyebrow">Micaila Fashion</span>
+    <p id="manifesto">Compramos cada peça como se fosse pra gente. Você escolhe o look, <em>a gente separa e envia.</em></p>
+  </div>
+</section>
+
+<!-- ================= COLEÇÕES ================= -->
+<section class="pad" id="colecoes" aria-labelledby="t-col">
+  <div class="wrap">
+    <p class="eyebrow" data-r>O que tem na arara</p>
+    <h2 class="h2" id="t-col" data-r>As coleções <em>da semana</em></h2>
+    <div class="cols-grid">
+      <ul class="list">
+        <li data-r><a class="wa" data-cta="col-tricô" data-msg="Olá! Vim pelo Instagram e tenho interesse nos *vestidos de tricô*." href="#"><span class="n">01</span><div><h3>Vestidos tricô</h3><p>Caimento leve e elegante para o dia a dia e para a noite.</p></div><span class="go" aria-hidden="true">↗</span></a></li>
+        <li data-r><a class="wa" data-cta="col-macaquinhos" data-msg="Olá! Vim pelo Instagram e tenho interesse nos *macaquinhos e conjuntos*." href="#"><span class="n">02</span><div><h3>Macaquinhos</h3><p>Macaquinhos, macacões e conjuntos prontos para sair.</p></div><span class="go" aria-hidden="true">↗</span></a></li>
+        <li data-r><a class="wa" data-cta="col-blusas" data-msg="Olá! Vim pelo Instagram e tenho interesse nas *blusas*." href="#"><span class="n">03</span><div><h3>Blusas</h3><p>Do básico ao arrumado, em várias cores e tamanhos.</p></div><span class="go" aria-hidden="true">↗</span></a></li>
+        <li data-r><a class="wa" data-cta="col-fitness" data-msg="Olá! Vim pelo Instagram e tenho interesse na *linha fitness*." href="#"><span class="n">04</span><div><h3>Fitness</h3><p>Tops, saias-short e jaquetas para treinar com estilo.</p></div><span class="go" aria-hidden="true">↗</span></a></li>
+        <li data-r><a class="wa" data-cta="col-aluguel" data-msg="Olá! Vim pelo Instagram e quero saber do *aluguel de vestidos*." href="#"><span class="n">05</span><div><h3>Aluguel de vestidos</h3><p>Vestidos de festa para formaturas, casamentos e eventos.</p></div><span class="go" aria-hidden="true">↗</span></a></li>
+      </ul>
+      <div class="cols-photo" data-r>
+        <div class="ph-pair">
+          <figure><div class="duo"><img src="manequins.webp" width="305" height="364" loading="lazy" alt="Conjuntos fitness rosa expostos na loja"></div><figcaption>Linha fitness</figcaption></figure>
+          <figure><div class="duo tall"><img src="arara.webp" width="196" height="460" loading="lazy" alt="Arara com blusas e vestidos coloridos"></div><figcaption>Novidades na arara</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO COMPRAR ================= -->
+<section class="pad" id="comprar" aria-labelledby="t-comp" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow" data-r>Do seu jeito</p>
+    <h2 class="h2" id="t-comp" data-r>Três jeitos <em>de comprar</em></h2>
+    <div class="steps">
+      <div class="step" data-r><div class="num">1</div><h3>Na <em>loja</em></h3><p>Venha provar com calma no nosso provador. De segunda a sábado, das 10h às 18h, sem fechar pro almoço.</p></div>
+      <div class="step" data-r><div class="num">2</div><h3>No <em>WhatsApp</em></h3><p>Mande o print da peça que você viu no Instagram. A gente confere o tamanho, separa e combina a entrega.</p></div>
+      <div class="step" data-r><div class="num">3</div><h3>No <em>atacado</em></h3><p>Primeira loja de atacado de Coari. Revenda com a gente: enviamos para os municípios.</p></div>
+    </div>
+    <div style="margin-top:44px" data-r>
+      <a class="btn wa" data-cta="atacado" data-msg="Olá! Vim pelo Instagram e quero comprar no *atacado* para revender." href="#">Quero comprar no atacado</a>
+      <p class="micro">Pedido mínimo e tabela do atacado: <span class="fill">[PREENCHER]</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOLDEN ================= -->
+<section class="golden pad" style="padding-top:0" aria-labelledby="t-gold">
+  <div class="wrap">
+    <div class="gold-card" data-r>
+      <div>
+        <p class="kicker">Coleção</p>
+        <h2 class="gold-title" id="t-gold">Golden<br>Moments</h2>
+        <p>Looks que fazem os seus melhores momentos ainda mais especiais. Estilo, elegância e você ainda mais linda.</p>
+        <a class="btn gold wa" data-cta="golden" data-msg="Olá! Vim pelo Instagram e quero ver a *Coleção Golden Moments*." href="#">Quero ver a Golden</a>
+        <div class="perks"><span class="perk">Crediário Bemol</span><span class="perk">Gift card Micaila</span><span class="perk">Envio para os municípios</span></div>
+      </div>
+      <div class="gift" aria-label="Gift card Micaila Fashion de 50 reais">
+        <div class="gl">Micaila <small style="font-size:.6em">Fashion</small></div>
+        <div class="gv">R$50</div>
+        <div class="chip"></div>
+        <div class="gs">giftcard · moda que inspira</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NÚMEROS ================= -->
+<section aria-label="A Micaila em números">
+  <div class="wrap">
+    <div class="stats" data-r>
+      <div class="stat"><b><i data-count="1" style="font-style:normal">0</i><sup>ª</sup></b><span>loja de atacado de Coari</span></div>
+      <div class="stat"><b data-count="6">0</b><span>dias por semana de portas abertas</span></div>
+      <div class="stat"><b data-count="1768">0</b><span>clientes e amigas no Instagram</span></div>
+      <div class="stat"><b>0</b><span>pausa pro almoço</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section class="pad" aria-labelledby="t-dep">
+  <div class="wrap">
+    <p class="eyebrow" data-r>Clientes</p>
+    <h2 class="h2" id="t-dep" data-r>Quem veste, <em>volta</em></h2>
+    <div class="quotes">
+      <div class="quote" data-r><p>“[PREENCHER: depoimento real de cliente — destaque ‘Clientes’ do Instagram]”</p><span>Nome da cliente · cidade</span></div>
+      <div class="quote" data-r><p>“[PREENCHER: depoimento de quem revende no atacado]”</p><span>Nome · município</span></div>
+      <div class="quote" data-r><p>“[PREENCHER: depoimento sobre o aluguel de vestido]”</p><span>Nome · evento</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="pad" id="duvidas" aria-labelledby="t-faq" style="padding-top:0">
+  <div class="wrap faq-grid">
+    <div>
+      <p class="eyebrow" data-r>Dúvidas</p>
+      <h2 class="h2" id="t-faq" data-r>O que todo mundo <em>pergunta primeiro</em></h2>
+    </div>
+    <div data-r>
+      <details><summary>Vocês enviam para outras cidades?<i aria-hidden="true"></i></summary><p>Sim! Enviamos para os municípios. Chame no WhatsApp com a sua cidade que a gente combina o envio. Prazo e frete: <span class="fill">[PREENCHER]</span></p></details>
+      <details><summary>Como funciona a compra no atacado?<i aria-hidden="true"></i></summary><p>Somos a primeira loja de atacado de Coari. Você escolhe as peças pelo WhatsApp ou na loja e recebe a tabela de atacado. Pedido mínimo: <span class="fill">[PREENCHER]</span></p></details>
+      <details><summary>Vocês alugam vestidos?<i aria-hidden="true"></i></summary><p>Sim, temos aluguel de vestidos para festas e eventos. Mande a data e o tamanho no WhatsApp para ver o que está disponível.</p></details>
+      <details><summary>Quais formas de pagamento vocês aceitam?<i aria-hidden="true"></i></summary><p>Aceitamos crediário Bemol. Outras formas (Pix, cartão, parcelamento): <span class="fill">[PREENCHER]</span></p></details>
+      <details><summary>Posso reservar uma peça que vi no Instagram?<i aria-hidden="true"></i></summary><p>Pode! Mande o print da peça e o seu tamanho no WhatsApp. A gente confere o estoque e separa pra você.</p></details>
+      <details><summary>Qual o horário da loja?<i aria-hidden="true"></i></summary><p>De segunda a sábado, das 10h às 18h. E não fechamos pro almoço.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISITE ================= -->
+<section class="pad" id="visite" aria-labelledby="t-vis" style="padding-top:0">
+  <div class="wrap visit">
+    <div class="info">
+      <p class="eyebrow" data-r>Visite</p>
+      <h2 class="h2" id="t-vis" data-r>Venha <em>provar</em></h2>
+      <dl data-r>
+        <div><dt>Endereço</dt><dd>Estrada do Aeroporto, 956<small>Ao lado da Construtintas · Coari-AM</small></dd></div>
+        <div><dt>Horário</dt><dd>Seg a sáb, 10h às 18h<small>Não fechamos pro almoço</small></dd></div>
+      </dl>
+      <div class="row-btns" data-r>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada%20do%20Aeroporto%2C%20956%2C%20Coari%20-%20AM" target="_blank" rel="noopener">Como chegar</a>
+        <a class="btn-ghost" href="https://www.instagram.com/micailafashion/" target="_blank" rel="noopener">@micailafashion</a>
+      </div>
+    </div>
+    <a class="map" data-r href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada%20do%20Aeroporto%2C%20956%2C%20Coari%20-%20AM" target="_blank" rel="noopener" aria-label="Abrir rota no Google Maps">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="mg" cx="55%" cy="48%" r="60%"><stop offset="0" stop-color="#3a1428"/><stop offset="1" stop-color="#1a0c14"/></radialGradient></defs>
+        <rect width="400" height="300" fill="url(#mg)"/>
+        <g stroke="rgba(247,164,186,.16)" stroke-width="10" fill="none" stroke-linecap="round"><path d="M-20 210 C 90 180, 160 230, 420 120"/><path d="M60 -20 L 150 320"/><path d="M260 -20 C 240 90, 300 200, 280 320"/></g>
+        <g stroke="rgba(247,237,239,.06)" stroke-width="2" fill="none"><path d="M0 60 H400 M0 120 H400 M0 250 H400 M100 0 V300 M330 0 V300"/></g>
+        <path d="M-20 210 C 90 180, 160 230, 420 120" stroke="#D5AE76" stroke-width="3" fill="none" stroke-dasharray="2 10" stroke-linecap="round"/>
+        <circle cx="222" cy="170" r="46" fill="rgba(255,122,168,.18)"/><circle cx="222" cy="170" r="22" fill="rgba(255,122,168,.35)"/>
+        <path d="M222 132c-14 0-24 10-24 23 0 17 24 39 24 39s24-22 24-39c0-13-10-23-24-23z" fill="#F7A4BA"/><circle cx="222" cy="155" r="8" fill="#140A10"/>
+      </svg>
+      <span class="map-tag">Estrada do Aeroporto, 956 · ao lado da Construtintas<b>Abrir rota ↗</b></span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final" aria-labelledby="t-fin">
+  <div class="wrap">
+    <p class="kicker" data-r>Vista o que te faz bem</p>
+    <h2 class="h2" id="t-fin" data-r>Fale agora <em>com a Micaila</em></h2>
+    <div data-r>
+      <a class="btn wa" data-cta="final" data-msg="Olá! Vim pelo Instagram e quero fazer uma encomenda na Micaila Fashion." href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Quero fazer minha encomenda
+      </a>
+      <p class="micro">Resposta no horário da loja · <b>(92) 98192-2212</b></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#topo"><b>Micaila</b><small>Fashion</small></a>
+      <p style="margin-top:14px;max-width:34ch">Moda feminina no atacado e varejo. Primeira loja de atacado de Coari-AM.</p>
+    </div>
+    <div>
+      <h4>Navegue</h4>
+      <ul><li><a href="#colecoes">Coleções</a></li><li><a href="#comprar">Como comprar</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#visite">Visite</a></li></ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a class="wa" data-cta="rodape" data-msg="Olá! Vim pelo Instagram e quero falar com a Micaila Fashion." href="#">WhatsApp (92) 98192-2212</a></li>
+        <li><a href="https://www.instagram.com/micailafashion/" target="_blank" rel="noopener">Instagram @micailafashion</a></li>
+        <li>Estrada do Aeroporto, 956 · Coari-AM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">© <span id="y"></span> Micaila Fashion · CNPJ <span class="fill">[PREENCHER]</span> · Este site não usa cookies de rastreamento até o Pixel ser ativado. <a href="#" style="text-decoration:underline">Política de privacidade</a></div>
+  <div class="giant" id="giant" aria-hidden="true">Micaila</div>
+</footer>
+
+<a class="wa-float wa" data-cta="flutuante" data-msg="Olá! Vim pelo Instagram e quero falar com a Micaila Fashion." href="#" aria-label="Falar com a Micaila Fashion no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.6.6-.9 1.4-.9 2.2.1 1 .5 1.9 1.1 2.7 1.1 1.6 2.5 2.9 4.2 3.6.5.2 1 .4 1.4.5.6.2 1.1.1 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg>
+</a>
+<div class="bar" id="bar"><a class="btn wa" data-cta="barra" data-msg="Olá! Vim pelo Instagram e quero fazer uma encomenda na Micaila Fashion." href="#">Encomendar pelo WhatsApp</a></div>
+
+<script>
+(function(){
+  var PHONE='5592981922212';
+  var qs=new URLSearchParams(location.search);
+  var src=qs.get('utm_source'), med=qs.get('utm_medium'), camp=qs.get('utm_campaign');
+  var tag=(src||med||camp)?' [origem: '+[src,med,camp].filter(Boolean).join(' / ')+']':'';
+  document.querySelectorAll('a.wa').forEach(function(a){
+    a.href='https://wa.me/'+PHONE+'?text='+encodeURIComponent((a.dataset.msg||'Olá!')+tag);
+    a.target='_blank'; a.rel='noopener';
+    a.addEventListener('click',function(){
+      try{ if(window.fbq) fbq('track','Contact'); if(window.gtag) gtag('event','generate_lead',{method:'whatsapp',cta:a.dataset.cta}); }catch(e){}
+    });
+  });
+  document.getElementById('y').textContent=new Date().getFullYear();
+
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $=function(id){return document.getElementById(id)};
+  var film=$('filme'), inner=$('stageInner'), pl=$('pl'), pr=$('pr'), intro=$('intro'), hint=$('hint'),
+      spots=$('spots'), floor=$('floor'), wl=$('wl'), wr=$('wr'), fig=$('fig'), over=$('over'), meta=$('meta'),
+      nav=$('nav'), bar=$('bar'), giant=$('giant');
+  var mobile=matchMedia('(max-width:760px)');
+  var clamp=function(v){return v<0?0:v>1?1:v}, seg=function(p,a,b){return clamp((p-a)/(b-a))},
+      ease=function(t){return 1-Math.pow(1-t,3)};
+
+  function film_(p){
+    var open=ease(seg(p,.04,.42));
+    var m=mobile.matches;
+    pl.style.transform='translateX('+(-open*125)+'%) skewY('+(open*-6)+'deg) rotate('+(open*-4)+'deg)';
+    pr.style.transform='scaleX(-1) translateX('+(-open*125)+'%) skewY('+(open*-6)+'deg) rotate('+(open*-4)+'deg)';
+    pl.style.filter=pr.style.filter='brightness('+(1-open*.5)+')';
+    var io=seg(p,.02,.2);
+    intro.style.opacity=1-io; intro.style.transform='translateY('+(-io*60)+'px) scale('+(1-io*.06)+')';
+    intro.style.pointerEvents=io>.6?'none':'auto';
+    hint.style.opacity=1-seg(p,0,.06);
+    var lit=seg(p,.18,.45);
+    spots.style.opacity=lit; floor.style.opacity=lit;
+    var f=ease(seg(p,.22,.55));
+    fig.style.opacity=f; fig.style.filter='blur('+((1-f)*14)+'px)'; fig.style.transform='scale('+(1.18-f*.18)+')';
+    var w=ease(seg(p,.36,.66));
+    wl.style.opacity=wr.style.opacity=w;
+    if(m){ wl.style.transform='translateY('+(-(1-w)*8)+'vh)'; wr.style.transform='translateY('+((1-w)*8)+'vh)'; }
+    else { wl.style.transform='translateX('+(-(1-w)*12)+'vw)'; wr.style.transform='translateX('+((1-w)*12)+'vw)'; }
+    over.style.opacity=ease(seg(p,.5,.7)); meta.style.opacity=ease(seg(p,.55,.75));
+    var out=seg(p,.82,1);
+    inner.style.filter=out?'blur('+(out*16)+'px)':'';
+    inner.style.transform='translateY('+(out*14)+'vh)';
+    inner.style.opacity=1-out*.85;
+  }
+
+  var words=[];
+  (function(){
+    var el=$('manifesto'); if(!el) return;
+    var walk=function(node){
+      [].slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var frag=document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(t){
+            if(!t) return;
+            if(/^\s+$/.test(t)) frag.appendChild(document.createTextNode(t));
+            else { var s=document.createElement('span'); s.className='w'; s.textContent=t; frag.appendChild(s); words.push(s); }
+          });
+          n.parentNode.replaceChild(frag,n);
+        } else walk(n);
+      });
+    }; walk(el);
+  })();
+
+  var ticking=false;
+  function onScroll(){
+    if(ticking) return; ticking=true;
+    requestAnimationFrame(function(){
+      ticking=false;
+      var vh=innerHeight, y=scrollY;
+      var r=film.getBoundingClientRect(), total=film.offsetHeight-vh;
+      var p=clamp(-r.top/total);
+      if(!reduce) film_(p);
+      nav.classList.toggle('solid', y>vh*.5 && p>.9 || r.bottom<vh*.6);
+      var showBar=r.bottom<vh*.7;
+      bar.classList.toggle('show',showBar); document.body.classList.toggle('bar-on',showBar);
+      // manifesto word reveal
+      if(words.length){
+        var m=$('manifesto').getBoundingClientRect();
+        var mp=clamp((vh*.85-m.top)/(m.height+vh*.35));
+        var k=Math.round(mp*words.length);
+        for(var i=0;i<words.length;i++) words[i].classList.toggle('on',i<k);
+      }
+      // giant wordmark
+      var g=giant.getBoundingClientRect();
+      var gp=clamp((vh-g.top)/(g.height*1.1));
+      giant.style.setProperty('--gb',((1-gp)*14).toFixed(1)+'px');
+      giant.style.setProperty('--go',(.2+gp*.8).toFixed(2));
+      giant.style.setProperty('--gy',((1-gp)*40).toFixed(0)+'px');
+    });
+  }
+  if(reduce){ film.style.height='100svh'; intro.style.display='none'; pl.style.display=pr.style.display='none'; hint.style.display='none';
+    [spots,floor,fig,wl,wr,over,meta].forEach(function(e){e.style.opacity=1;e.style.transform='none';e.style.filter='none'}); }
+  addEventListener('scroll',onScroll,{passive:true}); addEventListener('resize',onScroll); onScroll();
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} })},{rootMargin:'0px 0px -12% 0px'});
+  document.querySelectorAll('[data-r]').forEach(function(el){io.observe(el)});
+
+  var co=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting) return; co.unobserve(e.target);
+    var el=e.target, to=+el.dataset.count, t0=performance.now(), d=1400;
+    if(reduce){el.textContent=to.toLocaleString('pt-BR');return}
+    (function step(t){var k=clamp((t-t0)/d);el.textContent=Math.round(ease(k)*to).toLocaleString('pt-BR');if(k<1)requestAnimationFrame(step)})(t0);
+  })},{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(function(el){co.observe(el)});
+})();
+</script>
+</body>
+</html>
